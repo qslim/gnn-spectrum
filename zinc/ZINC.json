@@ -1,0 +1,22 @@
+{
+  "dataset_name": "ZINC",
+  "basis": "rho",
+  "epsilon": "1d8",
+  "power": 24,
+  "seeds": [0],
+  "num_workers": 8,
+  "hyperparams": {
+    "batch_size": 64,
+    "epochs": 351,
+    "learning_rate": 0.001,
+    "decay_rate": 0.6,
+    "milestones": [40, 75, 110, 145, 180, 215, 250, 305, 340],
+    "weight_decay": 0.00005,
+    "warmup_epochs": 5
+  },
+  "architecture": {
+    "layers": 6,
+    "hidden": 160,
+    "pooling": "M"
+  }
+}

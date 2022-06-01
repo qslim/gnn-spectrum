@@ -1,0 +1,23 @@
+{
+  "dataset_name": "NCI109",
+  "basis": "rho",
+  "epsilon": 0.5,
+  "power": 6,
+  "seeds": [0],
+  "num_folds": 10,
+  "num_workers": 8,
+  "hyperparams": {
+    "batch_size": 64,
+    "epochs": 501,
+    "learning_rate": 0.001,
+    "step_size": 50,
+    "decay_rate": 0.6
+  },
+  "architecture": {
+    "nonlinear": "GELU",
+    "layers": 6,
+    "hidden": 256,
+    "pooling": "X",
+    "dropout": 0
+  }
+}

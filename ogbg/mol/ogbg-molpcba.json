@@ -1,0 +1,23 @@
+{
+  "dataset_name": "ogbg-molpcba",
+  "basis": "rho",
+  "epsilon": 0.25,
+  "power": 12,
+  "seeds": [0],
+  "num_workers": 8,
+  "hyperparams": {
+    "batch_size": 64,
+    "epochs": 22,
+    "learning_rate": 0.0005,
+    "decay_rate": 0.2,
+    "milestones": [10, 15, 20],
+    "weight_decay": 0.005,
+    "warmup_epochs": 5
+  },
+  "architecture": {
+    "layers": 8,
+    "hidden": 256,
+    "pooling": "X",
+    "dropout": 0
+  }
+}
